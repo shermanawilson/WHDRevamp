@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <style>
+        body {
+            background-color: #EDEDED;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<footer th:fragment="footer" class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Navigation</h1>
+        </div>
+        <div class="col">
+            <li><a href="#">Home</a></li>
+        </div>
+        <div class="col">
+            <li><a href="#">Login</a></li>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h1>Policies</h1>
+        </div>
+        <div class="col">
+            <li><a href="#"></a>Privacy Policy</li>
+        </div>
+        <div class="col">
+            <li><a href="#">Terms</a></li>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <img src="img/footerLogo.PNG" alt="footerLogo" width="100px" height="100px">
+        </div>
+        <div class="col">
+            <li><a href="#"></a> &#169 2021 Wilson Hall Designs LLC. All Rights Reserved.</li>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h1>Connect With Us</h1>
+        </div>
+        <div class="col">
+            <img src="https://img.icons8.com/ios-glyphs/60/000000/phone--v1.png"/>
+            <h1>210 - 387 - 9926</h1>
+        </div>
+        <div class="col">
+            <img src="https://img.icons8.com/ios-filled/50/000000/email.png"/>
+            <h1>contactus@wilsonhalldesigns.com</h1>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
