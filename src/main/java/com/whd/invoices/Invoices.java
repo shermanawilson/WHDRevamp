@@ -1,23 +1,23 @@
-//package com.whd.model;
-//
+//package com.whd.invoices;
 //
 //import javax.persistence.*;
 //
-//
 //@Entity
-//@Table(name = "comments")
-//public class Comments {
+//@Table(name = "invoices")
+//public class Invoices {
 //
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.AUTO)
 //    private long id;
 //
-//    @Column
+//    @Column(length = 200)
 //    private String title;
 //
 //    @Column
 //    private String description;
 //
+//    @Column
+//    private String file;
 //
 //    private long user_id;
 //

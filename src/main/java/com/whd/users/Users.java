@@ -1,4 +1,4 @@
-package com.whd.model;
+package com.whd.users;
 
 
 //import javax.persistence.*;
