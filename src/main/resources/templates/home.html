@@ -5,19 +5,27 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 
+    <style>
+        #bodyContent {
+           background-color: red;
+        }
+    </style>
 </head>
 <body>
 <nav th:include="navbar"/>
 
-<div class="container">
+<div class="container" id="bodyContent">
 
-    <h1>Wilson Hall Designs</h1>
-
-    <h3>Where we bring your visions for your website to life!</h3>
-
-    <button type="button">Learn More</button>
+    <div class="header">
+        <h1>Wilson Hall Designs</h1>
+    </div>
+    <div class="body">
+        <h3>Where we bring your visions for your website to life!</h3>
+    </div>
+    <div class="button">
+        <button type="button">Learn More</button>
+    </div>
 </div>
-
 
 
 <footer th:include="footer"/>

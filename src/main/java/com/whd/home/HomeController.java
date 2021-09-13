@@ -18,4 +18,10 @@ public class HomeController {
     public String aboutView() {
         return "about";
     }
+
+
+    @GetMapping("/privacy")
+    public String privacyView() {
+        return "privacy";
+    }
 }
