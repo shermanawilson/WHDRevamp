@@ -5,17 +5,23 @@
     <title>Footer</title>
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
     <style>
-        body {
-            background-color: #EDEDED;
+        footer {
+            background-color: #b62727;
         }
         .container{
             display: flex;
             justify-content: space-around;
+            position: relative;
+        }
+        #footer {
+            position: absolute;
+            width: 100%;
+            height: 100px;
         }
     </style>
 </head>
 <body>
-<footer th:fragment="footer" class="container">
+<footer th:fragment="footer" id="footer" class="container">
     <div class="row">
         <div class="col">
             <h1>Navigation</h1>
@@ -42,7 +48,7 @@
 
     <div class="row">
         <div class="col">
-            <img src="img/footerLogo.PNG" alt="footerLogo" width="100px" height="100px">
+            <img src="../static/img/footerLogo.PNG" alt="footerLogo" width="100px" height="100px">
         </div>
         <div class="col">
             <li><a href="#"></a> &#169 2021 Wilson Hall Designs LLC. All Rights Reserved.</li>
