@@ -27,58 +27,64 @@
         .container{
             display: flex;
             justify-content: space-around;
+
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
 
     </style>
 </head>
 <body>
 <footer th:fragment="footer" id="footer" class="container">
-    <div class="row">
-        <div class="col">
+    <ul class="nav-list">
+        <li class="nav-item">
             <p>Navigation</p>
-        </div>
-        <div class="col">
+        </li>
+        <li class="nav-item">
             <li><a href="#">Home</a></li>
-        </div>
-        <div class="col">
+        </li>
+        <li class="nav-item">
             <li><a href="#">Login</a></li>
-        </div>
-    </div>
+        </li>
+    </ul>
 
-    <div class="row">
-        <div class="col">
+    <ul class="nav-list">
+        <li class="nav-item">
             <p>Policies</p>
-        </div>
-        <div class="col">
+        </li>
+        <li class="nav-item">
             <li><a href="#"></a>Privacy Policy</li>
-        </div>
-        <div class="col">
+        </li>
+        <li class="nav-item">
             <li><a href="#">Terms</a></li>
-        </div>
-    </div>
+        </li>
+    </ul>
 
-    <div class="row">
-        <div class="col">
-            <img src="../static/img/footerLogo.PNG" alt="footerLogo" width="100px" height="100px">
-        </div>
-        <div class="col">
+    <ul class="nav-list">
+        <li class="nav-item">
+            <img src="/img/footerLogo.PNG" alt="footerLogo" width="100px" height="100px">
+        </li>
+        <li class="nav-item">
             <li><a href="#"></a> &#169 2021 Wilson Hall Designs LLC. All Rights Reserved.</li>
-        </div>
-    </div>
+        </li>
+    </ul>
 
-    <div class="row">
-        <div class="col">
+    <ul class="nav-list">
+        <li class="nav-item">
             <p>Connect With Us</p>
-        </div>
-        <div class="col">
+        </li>
+        <li class="nav-item">
             <img src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png"/>
             <p>210 - 387 - 9926</p>
-        </div>
-        <div class="col">
+        </li>
+        <li class="nav-item">
             <img src="https://img.icons8.com/ios-filled/30/000000/email.png"/>
             <p>contactus@wilsonhalldesigns.com</p>
-        </div>
-    </div>
+        </li>
+    </ul>
 
 </footer>
 

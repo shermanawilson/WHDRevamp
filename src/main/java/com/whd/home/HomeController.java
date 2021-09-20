@@ -19,9 +19,23 @@ public class HomeController {
         return "about";
     }
 
+    @GetMapping("/terms")
+    public String privacyView() {
+        return "terms";
+    }
 
     @GetMapping("/privacy")
-    public String privacyView() {
+    public String termsView() {
         return "privacy";
+    }
+
+    @GetMapping("/contact")
+    public String contactView() {
+        return "contact";
+    }
+
+    @GetMapping("/login")
+    public String loginView() {
+        return "login";
     }
 }
